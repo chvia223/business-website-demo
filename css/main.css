@@ -1,19 +1,19 @@
 :root {
     /* Settings */
-    --spacing: 15px;
+    --spacing: 5px;
     --font-size: 1.15rem;
     /* Normal Colors */
-    --background-color: white;
-    --alt-background-color: gainsboro;
-    --font-color: black;
-    --alt-font-color: darkslategray;
-    --border-color: black;
+    --background-color: aliceblue;
+    --alt-background-color: #b4cded;
+    --font-color: #0D1821;
+    --alt-font-color: #344966;
+    --border-color: #0D1821;
     /* Dark Mode Colors */
-    --dark-background-color: black;
-    --dark-alt-background-color: darkslategray;
-    --dark-font-color: white;
-    --dark-alt-font-color: gainsboro;
-    --dark-border-color: white;
+    --dark-background-color: #0D1821;
+    --dark-alt-background-color: #344966;
+    --dark-font-color: aliceblue;
+    --dark-alt-font-color: #d1cbcb;
+    --dark-border-color: aliceblue;
 }
 
 html, body {
@@ -28,6 +28,20 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+
+body #logo {
+    height: 60px;
+    width: auto;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
 }
 
 header {
@@ -41,11 +55,17 @@ header {
     background-color: var(--alt-background-color);
 }
 
+header #company-name {
+    grid-column: 2;
+    padding-left: 10px;
+}
+
 header a {
     color: var(--alt-font-color);
 }
 
 header nav {
+    grid-column: 3;
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -64,11 +84,59 @@ header nav ul li {
 }
 
 main {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 275px auto 275px;
     flex: 1;
     font-size: var(--font-size);
-    padding: var(--spacing);
+    padding-bottom: var(--spacing);
     color: var(--font-color);
     background-color: var(--background-color);
+}
+
+#banner {
+    height: 350px;
+    width: 100%;
+}
+
+#left-margin {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#main-content {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: aliceblue;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#main-selections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    
+}
+
+#in-progress {
+    margin-right: 100px;
+
+}
+
+#blog {
+    margin-left: 100px;
+}
+
+#right-margin {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#main-content p {
+    margin-inline: 200px;
 }
 
 footer {
@@ -221,7 +289,7 @@ body.dark-mode header a {
 }
 
 body.dark-mode main {
-    color: var(--dark-font-color);
+    color: var(--font-color);
     background-color: var(--dark-background-color);
 }
 
