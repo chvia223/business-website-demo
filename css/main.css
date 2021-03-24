@@ -16,6 +16,10 @@
     --dark-border-color: aliceblue;
 }
 
+/*===========================================*\
+  GENERAL CSS 
+\*===========================================*/
+
 html, body {
     margin: 0;
     padding: 0;
@@ -94,49 +98,14 @@ main {
     background-color: var(--background-color);
 }
 
-#banner {
-    height: 350px;
-    width: 100%;
-}
-
 #left-margin {
     grid-column: 1;
     grid-row: 1;
 }
 
-#main-content {
-    grid-column: 2;
-    grid-row: 1;
-    background-color: aliceblue;
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-#main-selections {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 60px;
-    padding-bottom: 100px;
-    
-}
-
-#in-progress {
-    margin-right: 100px;
-
-}
-
-#blog {
-    margin-left: 100px;
-}
-
 #right-margin {
     grid-column: 3;
     grid-row: 1;
-}
-
-#main-content p {
-    margin-inline: 200px;
 }
 
 footer {
@@ -272,6 +241,145 @@ footer #dark-mode #tgl-wrapper .tgl + .tgl-btn:before {
 footer #dark-mode #tgl-wrapper .tgl:checked + .tgl-btn:after {
     left: 50%;
     transition: all 0.2s ease;
+}
+
+/*===========================================*\
+  HOMEPAGE SPECIFIC CSS 
+\*===========================================*/
+
+#banner {
+    height: 350px;
+    width: 100%;
+}
+
+#main-home-content {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: aliceblue;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#main-selections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    
+}
+
+#in-progress {
+    margin-right: 100px;
+
+}
+
+#blog {
+    margin-left: 100px;
+}
+
+#main-home-content p {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+
+/*===========================================*\
+  ABOUT US SPECIFIC CSS 
+\*===========================================*/
+
+#main-about-content {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: aliceblue;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#main-about-content .about-p {
+    margin-left: 150px;
+    margin-right: 150px;
+    line-height: 25px;
+}
+
+#meet-the-team {
+    text-align: left;
+    margin-left: 150px;
+}
+
+#about-team {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 275px;
+    grid-column: 1;
+    margin-bottom: 40px;
+}
+  
+.card-paragraph {
+    grid-column: 2;
+    text-align: left;
+    padding-left: 15px;
+    line-height: 35px;
+}
+
+  /* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  
+  /* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+/*===========================================*\
+  CONTACT US SPECIFIC CSS 
+\*===========================================*/
+
+#main-contact-content {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: aliceblue;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#main-contact-content p {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+#main-contact-content h2 {
+    padding-top: 40px;
+}
+
+#main-contact-content .q-a {
+    text-align: left;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#main-contact-content form {
+    width: 500px;
+	padding: 15px;
+	margin: 0 auto;
+	border: 1px solid;
+}
+
+#main-contact-content label {
+    display: block;
+	margin-bottom: 15px;
+	text-align: center;
 }
 
 /*===========================================*\
