@@ -384,19 +384,71 @@ footer #dark-mode #tgl-wrapper .tgl:checked + .tgl-btn:after {
     display: block;
 	margin-bottom: 15px;
 	text-align: center;
+    width: 100%;
+}
+
+label input {
+    width: 98%;
+}
+
+label #message-text {
+    resize: none;
+    width: 98%;
+    
 }
 
 /*===========================================*\
-  Subpage-1 SPECIFIC CSS 
+  GUIDES SPECIFIC CSS 
 \*===========================================*/
 
-#subpage-1-content {
+#guides-content {
     grid-column: 2;
     grid-row: 1;
     background-color: aliceblue;
     text-align: center;
     padding-bottom: 30px;
 }
+
+#guides-content p {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#guides-content table {
+    width: 70%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 3%;
+}
+
+#guides-content th {
+    border-bottom: 2px dotted grey;
+}
+
+#guides-content h2 {
+    margin-bottom: 0px;
+}
+
+#guides-content #row-space {
+    margin-top: 20px;
+}
+
+#guides-content .table-col-2 {
+    text-align: left;
+}
+
+#guides-content td.table-col-2 {
+    border-bottom: 1px dotted grey; 
+}
+
+#guides-content .lesson-separator {
+    border-bottom: 2px dotted grey;
+}
+
 
 /*===========================================*\
   Subpage-2 SPECIFIC CSS 
