@@ -28,7 +28,7 @@ html, #style-guide-content {
     font-size: 62.5%;
     padding: 2rem 1rem;
     text-align: center;
-    font-family: 'Inter', sans-serif; /* EDIT */
+    font-family: 'Inter', sans-serif;
 }
 
 #style-guide-content h1 {
@@ -36,27 +36,13 @@ html, #style-guide-content {
     font-size: 2.5rem;
     text-decoration: underline;
     text-align: center;
-    font-family: 'Roboto Slab', serif; /* EDIT */
+    font-family: 'Roboto Slab', serif;
 }
 
 #style-guide-content h2 {
     font-size: 1.75rem;
-    font-family: 'Roboto Slab', serif; /* EDIT */
+    font-family: 'Roboto Slab', serif;
 }
-
-
-/*
-No longer being used, but unsure if it should stay in
-#style-guide-content button {
-    font-size: 1.15rem;
-    padding: 0.75rem 1.5rem;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
-    background-color: var(--alt-background-color);
-    cursor: pointer;
-    font-family: 'Inter', sans-serif;
-}
-*/
 
 #style-guide-content button:hover {
     background-color: var(--background-color);
