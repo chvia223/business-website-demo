@@ -273,12 +273,32 @@ footer #dark-mode #tgl-wrapper .tgl:checked + .tgl-btn:after {
 }
 
 #in-progress {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
     margin-right: 100px;
+}
 
+#in-progress:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.4);
+}
+
+#new-guides {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+#new-guides:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.4);
 }
 
 #blog {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
     margin-left: 100px;
+}
+
+#blog:hover {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.4);
 }
 
 #main-home-content p {
@@ -373,11 +393,13 @@ footer #dark-mode #tgl-wrapper .tgl:checked + .tgl-btn:after {
 }
 
 #main-contact-content form {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     width: 500px;
 	padding: 15px;
 	margin: 0 auto;
 	border: 1px solid;
-    border-radius: 15px;
+    border-radius: 5px;
+    background-color: beige;
 }
 
 #main-contact-content label {
@@ -415,6 +437,7 @@ label #message-text {
 }
 
 #guides-content table {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 70%;
     border: 1px solid black;
     border-radius: 5px;
@@ -423,6 +446,25 @@ label #message-text {
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 3%;
+}
+
+#lesson-button {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #2374B8;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#lesson-button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
 }
 
 #guides-content th {
@@ -451,15 +493,121 @@ label #message-text {
 
 
 /*===========================================*\
-  Subpage-2 SPECIFIC CSS 
+  LESSON GENERAL SPECIFIC CSS 
 \*===========================================*/
 
-#subpage-2-content {
+.side-panel-lesson-button {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #2374B8;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.side-panel-lesson-button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+.lesson-info {
+    line-height: 25px;
+}
+
+/*===========================================*\
+  LESSON-1 SPECIFIC CSS 
+\*===========================================*/
+
+#left-margin-lesson-1 {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 10% auto 1fr;
+}
+
+#lesson-menu {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #F5F9F9;
+    grid-column: 2;
+    grid-row: 2;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-top: 5px solid #2374B8;
+    border-bottom: 5px solid #2374B8;
+    border-left: 5px solid #2374B8;
+    border-right: 1px solid #0B263C;
+}
+
+#lesson-menu th {
+    text-align: center;
+}
+
+#lesson-menu td {
+    text-align: left;
+    padding-left: 10px;
+}
+
+#lesson-1-content {
     grid-column: 2;
     grid-row: 1;
     background-color: aliceblue;
     text-align: center;
     padding-bottom: 30px;
+}
+
+#lesson-1-banner {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 940px;
+    height: 300px;
+    margin-bottom: 3%;
+}
+
+#lesson-1-content p, #lesson-1-content h2 {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}
+
+#lesson-1-content #lesson-1-objectives {
+    font-size: 16px;
+    padding: 1%;
+}
+
+#lesson-1-content table {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-size: 25px;
+}
+
+#lesson-1-content td {
+    padding: 1%;
+    width: 50%;
+}
+
+#lesson-1-content table p {
+    margin-left: 0%;
+    margin-right: 0%;
+    border-bottom: 2px dotted grey;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#lesson-1-content table p,.bordered {
+    border-right: 2px dotted grey;
 }
 
 /*===========================================*\
@@ -501,6 +649,7 @@ label #message-text {
 }
 
 #wireframes-content #home-wireframe {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     height: 700px;
     width: auto;
 }
@@ -512,6 +661,7 @@ label #message-text {
 }
 
 #wireframes-content #contact-wireframe {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     height: 500px;
     width: auto;
 }
@@ -523,6 +673,7 @@ label #message-text {
 }
 
 #wireframes-content #about-wireframe {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     height: 500px;
     width: auto;
 }
@@ -534,6 +685,7 @@ label #message-text {
 }
 
 #wireframes-content #guides-wireframe {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     height: 500px;
     width: auto;
 }
@@ -545,6 +697,7 @@ label #message-text {
 }
 
 #wireframes-content #lesson-1-wireframe {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     height: 500px;
     width: auto;
 }
