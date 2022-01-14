@@ -1,14 +1,9 @@
-# WDD 130 Final Project
-Owner: Christian Viazzo
-
-Semester: Winter 2021
-
-The `website` branch contains the live website hosted with GitHub pages. The `dev` branch is where develpment for this website takes place.
-
 # Overview
 
 
-This is a website designed to help me practice HTML, CSS, and Javascript. I also took time to build this concept website by creating wireframes, 
+This is a website designed to help me practice HTML, CSS, and Javascript. I also took time to build this concept website by creating wireframes and a style guide. Both are accessible from the website itself. To view it go to the right side menu and click on the github-pages tab. Click `View Deployment` on the most recent build.
+
+The `website` branch contains the live website hosted with GitHub pages.
 
 [Software Demo Video](Link not working currently)
 
